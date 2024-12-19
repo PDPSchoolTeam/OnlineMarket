@@ -11,6 +11,7 @@
 ![img_4.png](img_4.png)
 
 ## Installation ans Set Up
+<pre>git clone https://github.com/theMirmakhmudov/OnlineMarketApplication.git</pre>
 <pre>pythom -m venv .venv</pre>
 <pre>source .venv/bin/activate</pre>
 <pre>pip install -r requirements.txt</pre>

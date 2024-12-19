@@ -34,6 +34,4 @@
 
 <pre>make admin</pre>
 
-<hr>
-
 <footer>© Copyright 2024 Responsibility Team.</footer>

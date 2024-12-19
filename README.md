@@ -33,7 +33,6 @@
 ### Create Super Admin with Make file
 
 <pre>make admin</pre>
-
-<hr>
+<br><br>
 
 <footer>© Copyright 2024 Responsibility Team.</footer>

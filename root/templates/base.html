@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <title>Xaridlar</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    nav {
+      background-color: #28a745; /* Green background */
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: whitesmoke !important;
+    }
+
+    .navbar-toggler-icon {
+      background-color: white;
+    }
+
+    .badge {
+      background-color: #444;
+      font-size: 14px;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .display-8 {
+      font-weight: 300;
+      font-size: 30px;
+      color: #17a2b8;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color: #f8f9fa;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-body {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand ms-3 text-white" href="/">
+      Xaridlar
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cart">Savat
+            <span class="badge badge-pill">{{request.session.cart.keys|length}}</span>
+          </a>
+        </li>
+
+        {% if request.session.customer %}
+        <li class="nav-item">
+          <a class="nav-link" href="/orders">Yetkazmalar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Chiqish</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Ro'yxatdan o'tish</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Kirish</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    {% block content %}
+    <!-- Content goes here -->
+    {% endblock %}
+  </div>
+
+</body>
+
+</html>

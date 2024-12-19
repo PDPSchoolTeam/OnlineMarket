@@ -1,14 +1,14 @@
 ## Online Shoppping Application
-#### `1. Register Page`
-![img_2.png](img_2.png)
-#### `2. Login Page`
-![img_1.png](img_1.png)
-#### `3. Product Page`
-![img.png](img.png)
-#### `4. Cart Page`
-![img_3.png](img_3.png)
-#### `5. Orders Page`
-![img_4.png](img_4.png)
+#### `1 . Main Page`
+![img_5.png](img_5.png)
+#### `2. Product Page`
+![img_7.png](img_7.png)
+#### `3. Cart Page`
+![img_8.png](img_8.png)
+#### `4. Orders Page`
+![img_6.png](img_6.png)
+#### `5. Favourite Page`
+![img_9.png](img_9.png)
 
 ## Installation ans Set Up
 <pre>git clone https://github.com/theMirmakhmudov/OnlineMarketApplication.git</pre>
